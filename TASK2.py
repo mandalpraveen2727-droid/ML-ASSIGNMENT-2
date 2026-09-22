@@ -1,16 +1,12 @@
-# Import the required libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.datasets import load_wine
 
-# Load the Wine dataset
 wine = load_wine()
 
-# Convert it into a DataFrame
 df = pd.DataFrame(wine.data, columns=wine.feature_names)
 
-# Create separate boxplots for every feature
 number_of_columns = 3
 number_of_rows = 5
 
